@@ -1,0 +1,180 @@
+/* Reset margin dan padding untuk elemen dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgb(21, 95, 156);
+    color: white;
+    position: relative;
+}
+
+header .logo a {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #4a89b7;
+    border-radius: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    header nav.active {
+        display: block;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Todo Container */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.todo-card {
+    background-color: #9fbcda;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+}
+
+.todo-card:hover {
+    transform: scale(1.1);
+}
+
+.todo-card span.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0b7dda;
+}
+
+footer {
+    background-color: rgb(21, 95, 156);
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #ccc;
+    font-size: 18px;
+}
+
+footer .py-3 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}

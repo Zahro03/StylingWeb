@@ -1,0 +1,60 @@
+body {
+    background-color: silver;
+    /* Warna latar belakang yang lembut */
+}
+
+.col-md-6 {
+    max-width: 400px;
+    /* Batasi lebar kolom */
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    /* Lebar maksimum kartu dikurangi */
+    border: none;
+    border-radius: 10px;
+    background-color:pink;
+    box-shadow: 0 10px 15px rgba(60, 58, 58, 0.2);
+    margin: 0 auto;
+    /* Memusatkan kartu */
+}
+
+
+
+.card-title {
+    font-size: 20px;  /* Mengatur ukuran font untuk judul */
+    font-weight: bold;  /* Menebalkan teks */
+    margin-bottom: 10px;  /* Menambahkan jarak di bawah judul */
+}
+
+
+.form-label {
+    font-weight: 400;
+    /* Menebalkan label form */
+}
+
+.btn-primary {
+    background-color:palevioletred;
+    /* Warna latar belakang tombol */
+    border: none;
+    /* Menghilangkan border pada tombol */
+}
+
+.btn-primary:hover {
+    background-color: pink;
+    /* Warna latar belakang tombol saat hover */
+}
+
+.mt-3 {
+    margin-top: 1rem;
+    /* Menambahkan margin atas pada elemen */
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+    /* Ukuran margin atas yang setara dengan mt-2 di Bootstrap */
+}

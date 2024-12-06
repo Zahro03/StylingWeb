@@ -1,0 +1,141 @@
+/* Mengatur elemen body untuk memenuhi tinggi penuh viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: silver; /* Warna latar belakang lebih lembut */
+}
+
+/* Wrapper untuk memposisikan konten utama dan footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Tinggi penuh viewport */
+    padding-top: 120px; /* Menambahkan padding-top agar card tidak tertutup header */
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* Warna putih untuk header lebih terang */
+    width: 100%;
+    position: fixed; /* Header tetap di atas */
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e2e8f0; /* Warna border lebih halus */
+    padding: 15px 20px; /* Tambahkan padding sedikit lebih besar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.logo img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4a5568; /* Warna lebih gelap agar mudah dibaca */
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d8839c; /* Warna hover lebih cerah */
+}
+
+.logout .btn {
+    background-color: #d8839c; /* Warna pink untuk tombol Log Out */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px; /* Tombol lebih rounded */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.logout .btn:hover {
+    background-color: #bf5f7b; /* Warna lebih gelap saat hover */
+}
+
+/* Card */
+.card {
+    background-color: white;
+    border: none;
+    border-radius: 20px; /* Sudut lebih kecil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan lebih jelas */
+    width: 30%; /* Ukuran card lebih kecil */
+    margin: auto;
+    padding: 20px; /* Padding lebih kecil agar lebih compact */
+}
+
+.card-header h1 {
+    font-size: 2rem; /* Ukuran teks lebih besar */
+    color: #d8839c;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Memberikan ruang lebih antara form */
+}
+
+.form-control {
+    border-radius: 20px;
+    border: 1px solid #e2e8f0; /* Border halus */
+}
+
+textarea.form-control {
+    resize: none; /* Nonaktifkan resize */
+}
+
+button.btn {
+    background-color: #d8839c;
+    border: none;
+    color: white;
+    border-radius: 25px; /* Tombol lebih rounded */
+    padding: 12px 25px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+button.btn:hover {
+    background-color: #bf5f7b; /* Warna lebih gelap saat hover */
+}
+
+/* Footer */
+footer {
+    margin-top: auto; /* Memastikan footer berada di bawah */
+    background-color: #f1f1f1; /* Warna latar belakang footer */
+    color: #333;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
